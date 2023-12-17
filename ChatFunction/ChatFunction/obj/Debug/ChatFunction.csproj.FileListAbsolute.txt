@@ -1,0 +1,14 @@
+Z:\IGMProfile\Desktop\201\ChatFunction\ChatFunction\bin\Debug\ChatFunction.exe.config
+Z:\IGMProfile\Desktop\201\ChatFunction\ChatFunction\bin\Debug\ChatFunction.exe
+Z:\IGMProfile\Desktop\201\ChatFunction\ChatFunction\bin\Debug\ChatFunction.pdb
+Z:\IGMProfile\Desktop\201\ChatFunction\ChatFunction\obj\Debug\ChatFunction.csproj.AssemblyReference.cache
+Z:\IGMProfile\Desktop\201\ChatFunction\ChatFunction\obj\Debug\ChatFunction.csproj.SuggestedBindingRedirects.cache
+Z:\IGMProfile\Desktop\201\ChatFunction\ChatFunction\obj\Debug\ChatFunction.Properties.Resources.resources
+Z:\IGMProfile\Desktop\201\ChatFunction\ChatFunction\obj\Debug\ChatFunction.csproj.GenerateResource.cache
+Z:\IGMProfile\Desktop\201\ChatFunction\ChatFunction\obj\Debug\ChatFunction.csproj.CoreCompileInputs.cache
+Z:\IGMProfile\Desktop\201\ChatFunction\ChatFunction\obj\Debug\ChatFunction.exe
+Z:\IGMProfile\Desktop\201\ChatFunction\ChatFunction\obj\Debug\ChatFunction.pdb
+Z:\IGMProfile\Desktop\201\ChatFunction\ChatFunction\obj\Debug\ChatFunction.chat.resources
+Z:\IGMProfile\Desktop\201\ChatFunction\ChatFunction\bin\Debug\ChatLib.dll
+Z:\IGMProfile\Desktop\201\ChatFunction\ChatFunction\bin\Debug\ChatLib.pdb
+Z:\IGMProfile\Desktop\201\ChatFunction\ChatFunction\obj\Debug\ChatFunction.csproj.CopyComplete
