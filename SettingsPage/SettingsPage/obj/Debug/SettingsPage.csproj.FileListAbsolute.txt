@@ -1,0 +1,14 @@
+Z:\IGMProfile\Desktop\SettingsPage\SettingsPage\bin\Debug\SettingsPage.exe.config
+Z:\IGMProfile\Desktop\SettingsPage\SettingsPage\bin\Debug\SettingsPage.exe
+Z:\IGMProfile\Desktop\SettingsPage\SettingsPage\bin\Debug\SettingsPage.pdb
+Z:\IGMProfile\Desktop\SettingsPage\SettingsPage\obj\Debug\SettingsPage.csproj.AssemblyReference.cache
+Z:\IGMProfile\Desktop\SettingsPage\SettingsPage\obj\Debug\SettingsPage.csproj.SuggestedBindingRedirects.cache
+Z:\IGMProfile\Desktop\SettingsPage\SettingsPage\obj\Debug\SettingsPage.Form1.resources
+Z:\IGMProfile\Desktop\SettingsPage\SettingsPage\obj\Debug\SettingsPage.Properties.Resources.resources
+Z:\IGMProfile\Desktop\SettingsPage\SettingsPage\obj\Debug\SettingsPage.csproj.GenerateResource.cache
+Z:\IGMProfile\Desktop\SettingsPage\SettingsPage\obj\Debug\SettingsPage.csproj.CoreCompileInputs.cache
+Z:\IGMProfile\Desktop\SettingsPage\SettingsPage\obj\Debug\SettingsPage.exe
+Z:\IGMProfile\Desktop\SettingsPage\SettingsPage\obj\Debug\SettingsPage.pdb
+Z:\IGMProfile\Desktop\SettingsPage\SettingsPage\bin\Debug\ProfileLib.dll
+Z:\IGMProfile\Desktop\SettingsPage\SettingsPage\bin\Debug\ProfileLib.pdb
+Z:\IGMProfile\Desktop\SettingsPage\SettingsPage\obj\Debug\SettingsPage.csproj.CopyComplete
