@@ -1,0 +1,6 @@
+Z:\IGMProfile\Desktop\ProfileLib\ProfileLib\bin\Debug\ProfileLib.dll
+Z:\IGMProfile\Desktop\ProfileLib\ProfileLib\bin\Debug\ProfileLib.pdb
+Z:\IGMProfile\Desktop\ProfileLib\ProfileLib\obj\Debug\ProfileLib.csproj.AssemblyReference.cache
+Z:\IGMProfile\Desktop\ProfileLib\ProfileLib\obj\Debug\ProfileLib.csproj.CoreCompileInputs.cache
+Z:\IGMProfile\Desktop\ProfileLib\ProfileLib\obj\Debug\ProfileLib.dll
+Z:\IGMProfile\Desktop\ProfileLib\ProfileLib\obj\Debug\ProfileLib.pdb
