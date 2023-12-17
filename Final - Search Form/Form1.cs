@@ -13,55 +13,61 @@ namespace Final___Search_Form
     public partial class Form1 : Form
     {
 
+        //constants for various controls
         const string DefaultSearchText = "Search for a Game!";
-        List<Game> games;
-        List<Team> teams;
-        GameDatabase gameDB;
-        TeamDatabase teamDB;
-        Requester requester;
+        const string DefaultTeamSearchText = "Enter a Team Name";
+        const byte DefaultComboBoxIndex = 0;
+
+        //Lists of Game and Team for return results by searcher
+        List<Game> foundGamesBySearch;
+        List<Team> foundTeamsBySearch;
+
+        //necessary objects for searcher and requester to work with this form
+        
         Searcher searcher;
+        Requester requester;
 
-        public Form1()
+        public Form1(Searcher searcher, Requester requester)
         {
-            InitializeComponent();
-            this.searchGameButton.Click += new EventHandler(SearchButton__Click);
-            this.comboBox1.SelectedIndex = 0;
 
-            InstantiateGameList();
-            CreateSearcher();
+            this.searcher = searcher;
+            this.requester = requester;
+
+            InitializeComponent();
+
+            this.searchGameButton.Click += new EventHandler(SearchButton__Click);
+            this.requestGameButton.Click += new EventHandler(RequestButton__Click);
+
+            
+
+            HideTeamResultsGroupBox();
 
             
         }
 
-        private void CreateSearcher()
+ 
+
+        private void HideTeamResultsGroupBox()
         {
-            searcher = new Searcher(this.requester, this.gameDB, this.teamDB);
+            this.teamResultsGroupBox.Visible = false;
         }
 
-        /* Method: InstantiateGameList
-         * Purpose: Fill GameDatabase object
-         * Limitations: none, but Authors note on this method:
-         * for a real application, this method shouldn't be tied to a page but to an overarching "manager class" that creates these pages
-         * and relevant information. Adding games like this is nonsensical in almost every way for an online database. It would be more correct
-         * to store these information in a file and pull it from there. For the sake of this program's needs, however, this is an "acceptable way"
-         * to do this.
-         */
-        private void InstantiateGameList()
+        private void ShowTeamResultsGroupBox(Game game)
         {
-            gameDB = new GameDatabase();
+            this.teamSearchTextBox.Text = DefaultTeamSearchText;
+            this.comboBox1.SelectedIndex = DefaultComboBoxIndex;
 
-            gameDB.AddGame(new Game("Fortnite", new List<string> { "PC", "Nintendo Switch", "Xbox One", "Xbox Series X/S", "Playstation 5", "Playstation 4" }));
-            gameDB.AddGame(new Game("Overwatch 2", new List<string> { "PC", "Nintendo Switch", "Xbox One", "Xbox Series X/S", "Playstation 5", "Playstation 4" }));
-            gameDB.AddGame(new Game("Call of Duty Modern Warfare 3", new List<string> { "PC", "Xbox One", "Playstation 5", "Playstation 4" }));
-            gameDB.AddGame(new Game("MineCraft", new List<string> { "PC", "Mac", "Linux", "Nintendo Switch", "Xbox One", "Xbox Series X/S", "Playstation 5", "Playstation 4" }));
-            gameDB.AddGame(new Game("StarCraft 2", new List<string> {"PC", "Mac"}));
-                
+            this.teamResultsGroupBox.Visible = true;
+            this.teamResultsGroupBox.Text = game.Name;
         }
 
         private void SearchButton__Click(object sender, EventArgs e)
         {
+            //hide the TeamResultsGroupBox while a new search is under way
+            HideTeamResultsGroupBox();
+
             //fill games list via the searcher, based on the User's entered text for the searchGameTextBox
-            games = searcher.SearchGame(searchGameTextBox.Text);
+            foundGamesBySearch = searcher.SearchGame(searchGameTextBox.Text);
 
             //create RichTextBox's to be added to gameTableLayoutPanel
             RichTextBox gameName;
@@ -72,8 +78,9 @@ namespace Final___Search_Form
             gameTableLayoutPanel.RowStyles.Clear();
 
             //loop through all found games matching search result and add their information to gameTableLayoutPanel
-            foreach (Game game in games)
+            foreach (Game game in foundGamesBySearch)
             {
+
                 gameName = new RichTextBox();
                 gamePlatforms = new RichTextBox();
 
@@ -89,9 +96,18 @@ namespace Final___Search_Form
                 gameName.Dock = DockStyle.Fill;
                 gamePlatforms.Dock = DockStyle.Fill;
 
+                //store Game object in control's tags
+                gameName.Tag = game;
+                gamePlatforms.Tag = game;
 
+                //add controls
                 gameTableLayoutPanel.Controls.Add(gameName);
                 gameTableLayoutPanel.Controls.Add(gamePlatforms);
+
+                //add click event for controls
+                gameName.Click += new EventHandler(GameRichTextBox__Click);
+                gamePlatforms.Click += new EventHandler(GameRichTextBox__Click);
+
 
             }
 
@@ -103,9 +119,23 @@ namespace Final___Search_Form
 
         }
 
+        private void GameRichTextBox__Click(object sender, EventArgs e)
+        {
+            RichTextBox rtb = (RichTextBox)sender;
+
+            if(rtb.Tag.GetType() == typeof(GameNotFound))
+            {
+                HideTeamResultsGroupBox();
+            }
+            else
+            {
+                ShowTeamResultsGroupBox((Game)rtb.Tag);
+            }
+        }
+
         private void RequestButton__Click(object sender, EventArgs e)
         {
-            return;
+            Console.WriteLine(requestGameTextBox.Text);
         }
 
         

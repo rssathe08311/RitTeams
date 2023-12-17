@@ -37,26 +37,33 @@
             this.label1 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.teamSearchTextBox = new System.Windows.Forms.TextBox();
+            this.searcherGroupBox = new System.Windows.Forms.GroupBox();
+            this.requesterGroupBox = new System.Windows.Forms.GroupBox();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.teamResultsGroupBox = new System.Windows.Forms.GroupBox();
+            this.searcherGroupBox.SuspendLayout();
+            this.requesterGroupBox.SuspendLayout();
+            this.teamResultsGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // gameTableLayoutPanel
             // 
             this.gameTableLayoutPanel.AutoScroll = true;
             this.gameTableLayoutPanel.ColumnCount = 2;
-            this.gameTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.gameTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.gameTableLayoutPanel.Location = new System.Drawing.Point(26, 159);
+            this.gameTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.gameTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.66666F));
+            this.gameTableLayoutPanel.Location = new System.Drawing.Point(18, 128);
             this.gameTableLayoutPanel.Name = "gameTableLayoutPanel";
             this.gameTableLayoutPanel.RowCount = 2;
             this.gameTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.gameTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.gameTableLayoutPanel.Size = new System.Drawing.Size(390, 234);
+            this.gameTableLayoutPanel.Size = new System.Drawing.Size(365, 274);
             this.gameTableLayoutPanel.TabIndex = 0;
             // 
             // searchGameTextBox
             // 
-            this.searchGameTextBox.Location = new System.Drawing.Point(36, 124);
+            this.searchGameTextBox.Location = new System.Drawing.Point(18, 94);
             this.searchGameTextBox.Name = "searchGameTextBox";
             this.searchGameTextBox.Size = new System.Drawing.Size(188, 20);
             this.searchGameTextBox.TabIndex = 1;
@@ -64,15 +71,15 @@
             // 
             // requestGameTextBox
             // 
-            this.requestGameTextBox.Location = new System.Drawing.Point(36, 407);
+            this.requestGameTextBox.Location = new System.Drawing.Point(9, 78);
             this.requestGameTextBox.Name = "requestGameTextBox";
-            this.requestGameTextBox.Size = new System.Drawing.Size(188, 20);
+            this.requestGameTextBox.Size = new System.Drawing.Size(158, 20);
             this.requestGameTextBox.TabIndex = 2;
             this.requestGameTextBox.Text = "Request a Game";
             // 
             // requestGameButton
             // 
-            this.requestGameButton.Location = new System.Drawing.Point(246, 407);
+            this.requestGameButton.Location = new System.Drawing.Point(174, 77);
             this.requestGameButton.Name = "requestGameButton";
             this.requestGameButton.Size = new System.Drawing.Size(75, 23);
             this.requestGameButton.TabIndex = 3;
@@ -81,7 +88,7 @@
             // 
             // searchGameButton
             // 
-            this.searchGameButton.Location = new System.Drawing.Point(273, 121);
+            this.searchGameButton.Location = new System.Drawing.Point(333, 94);
             this.searchGameButton.Name = "searchGameButton";
             this.searchGameButton.Size = new System.Drawing.Size(75, 23);
             this.searchGameButton.TabIndex = 4;
@@ -95,7 +102,7 @@
             this.teamLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.teamLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.teamLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.teamLayoutPanel.Location = new System.Drawing.Point(536, 159);
+            this.teamLayoutPanel.Location = new System.Drawing.Point(14, 83);
             this.teamLayoutPanel.Name = "teamLayoutPanel";
             this.teamLayoutPanel.RowCount = 1;
             this.teamLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -112,7 +119,8 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(39, 39);
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Location = new System.Drawing.Point(18, 19);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(309, 69);
@@ -132,36 +140,82 @@
             "Nintendo Switch",
             "Xbox Series S",
             "PlayStation 4"});
-            this.comboBox1.Location = new System.Drawing.Point(536, 132);
+            this.comboBox1.Location = new System.Drawing.Point(14, 56);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(156, 21);
             this.comboBox1.TabIndex = 7;
             // 
-            // textBox1
+            // teamSearchTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(536, 107);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(156, 20);
-            this.textBox1.TabIndex = 8;
-            this.textBox1.Text = "Enter Team Name (Optional)";
+            this.teamSearchTextBox.Location = new System.Drawing.Point(14, 30);
+            this.teamSearchTextBox.Name = "teamSearchTextBox";
+            this.teamSearchTextBox.Size = new System.Drawing.Size(156, 20);
+            this.teamSearchTextBox.TabIndex = 8;
+            this.teamSearchTextBox.Text = "Enter Team Name (Optional)";
+            // 
+            // searcherGroupBox
+            // 
+            this.searcherGroupBox.Controls.Add(this.gameTableLayoutPanel);
+            this.searcherGroupBox.Controls.Add(this.richTextBox1);
+            this.searcherGroupBox.Controls.Add(this.searchGameTextBox);
+            this.searcherGroupBox.Controls.Add(this.searchGameButton);
+            this.searcherGroupBox.Location = new System.Drawing.Point(36, 28);
+            this.searcherGroupBox.Name = "searcherGroupBox";
+            this.searcherGroupBox.Size = new System.Drawing.Size(427, 410);
+            this.searcherGroupBox.TabIndex = 9;
+            this.searcherGroupBox.TabStop = false;
+            // 
+            // requesterGroupBox
+            // 
+            this.requesterGroupBox.Controls.Add(this.richTextBox2);
+            this.requesterGroupBox.Controls.Add(this.requestGameTextBox);
+            this.requesterGroupBox.Controls.Add(this.requestGameButton);
+            this.requesterGroupBox.Location = new System.Drawing.Point(493, 332);
+            this.requesterGroupBox.Name = "requesterGroupBox";
+            this.requesterGroupBox.Size = new System.Drawing.Size(269, 106);
+            this.requesterGroupBox.TabIndex = 10;
+            this.requesterGroupBox.TabStop = false;
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox2.Location = new System.Drawing.Point(11, 19);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.ReadOnly = true;
+            this.richTextBox2.Size = new System.Drawing.Size(238, 53);
+            this.richTextBox2.TabIndex = 7;
+            this.richTextBox2.Text = "Is your game not available? Enter its game title here and we will review it to be" +
+    " added to the database";
+            // 
+            // teamResultsGroupBox
+            // 
+            this.teamResultsGroupBox.Controls.Add(this.teamLayoutPanel);
+            this.teamResultsGroupBox.Controls.Add(this.comboBox1);
+            this.teamResultsGroupBox.Controls.Add(this.teamSearchTextBox);
+            this.teamResultsGroupBox.Location = new System.Drawing.Point(493, 28);
+            this.teamResultsGroupBox.Name = "teamResultsGroupBox";
+            this.teamResultsGroupBox.Size = new System.Drawing.Size(269, 298);
+            this.teamResultsGroupBox.TabIndex = 11;
+            this.teamResultsGroupBox.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.teamResultsGroupBox);
+            this.Controls.Add(this.requesterGroupBox);
+            this.Controls.Add(this.searcherGroupBox);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.teamLayoutPanel);
-            this.Controls.Add(this.searchGameButton);
-            this.Controls.Add(this.requestGameButton);
-            this.Controls.Add(this.requestGameTextBox);
-            this.Controls.Add(this.searchGameTextBox);
-            this.Controls.Add(this.gameTableLayoutPanel);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.searcherGroupBox.ResumeLayout(false);
+            this.searcherGroupBox.PerformLayout();
+            this.requesterGroupBox.ResumeLayout(false);
+            this.requesterGroupBox.PerformLayout();
+            this.teamResultsGroupBox.ResumeLayout(false);
+            this.teamResultsGroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,7 +232,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox teamSearchTextBox;
+        private System.Windows.Forms.GroupBox searcherGroupBox;
+        private System.Windows.Forms.GroupBox requesterGroupBox;
+        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.GroupBox teamResultsGroupBox;
     }
 }
 

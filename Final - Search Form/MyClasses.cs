@@ -93,12 +93,10 @@ namespace Final___Search_Form
     public class TeamDatabase
     {
         private List<Team> teams;
-        private Searcher search;
 
-        public TeamDatabase(Searcher searcher)
+        public TeamDatabase()
         {
             teams = new List<Team>();
-            search = searcher;
         }
 
         public Team ReturnTeamsByGame(Game game)
@@ -113,43 +111,16 @@ namespace Final___Search_Form
         }
     }
 
-    // Represents a query for game requests
-    public class RequestQuery
-    {
-        private Dictionary<string, string> gameRequests;
-
-        public RequestQuery()
-        {
-            gameRequests = new Dictionary<string, string>();
-        }
-
-        public void AddRequest(string gameName)
-        {
-            // Add logic to add a game request
-        }
-
-        public void AddRequest(string gameName, string console)
-        {
-            // Add logic to add a game request with platform
-        }
-
-        public void AddRequest(KeyValuePair<string, string> gameInfo)
-        {
-            // Add logic to add a game request with additional information
-        }
-    }
 
     // Represents a requester
     public class Requester
     {
         private KeyValuePair<string, string> requestInfo;
-        private RequestQuery rq;
-        private Searcher search;
+        private GameDatabase gameDB;
 
-        public Requester(RequestQuery requestQuery, Searcher searcher)
+        public Requester(GameDatabase gameDB)
         {
-            rq = requestQuery;
-            search = searcher;
+            this.gameDB = gameDB;
         }
 
         public void Search()
@@ -181,15 +152,13 @@ namespace Final___Search_Form
     // Represents a searcher
     public class Searcher
     {
-        private List<Game> foundGames;
-        private List<Team> foundTeams;
+        
         private GameDatabase gameDB;
-        private Requester requester;
         private TeamDatabase teamDB;
 
-        public Searcher(Requester request, GameDatabase gameDatabase, TeamDatabase teamDatabase)
+        public Searcher(GameDatabase gameDatabase, TeamDatabase teamDatabase)
         {
-            requester = request;
+
             gameDB = gameDatabase;
             teamDB = teamDatabase;
         }
