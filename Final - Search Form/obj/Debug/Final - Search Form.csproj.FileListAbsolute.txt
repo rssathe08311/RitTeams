@@ -1,0 +1,10 @@
+C:\Users\black\source\repos\AB-blackA\myIGME-201-DesignAndAlgrebriacSolutions\Final\Final - Search Form\bin\Debug\Final - Search Form.exe.config
+C:\Users\black\source\repos\AB-blackA\myIGME-201-DesignAndAlgrebriacSolutions\Final\Final - Search Form\bin\Debug\Final - Search Form.exe
+C:\Users\black\source\repos\AB-blackA\myIGME-201-DesignAndAlgrebriacSolutions\Final\Final - Search Form\bin\Debug\Final - Search Form.pdb
+C:\Users\black\source\repos\AB-blackA\myIGME-201-DesignAndAlgrebriacSolutions\Final\Final - Search Form\obj\Debug\Final - Search Form.csproj.AssemblyReference.cache
+C:\Users\black\source\repos\AB-blackA\myIGME-201-DesignAndAlgrebriacSolutions\Final\Final - Search Form\obj\Debug\Final___Search_Form.Form1.resources
+C:\Users\black\source\repos\AB-blackA\myIGME-201-DesignAndAlgrebriacSolutions\Final\Final - Search Form\obj\Debug\Final___Search_Form.Properties.Resources.resources
+C:\Users\black\source\repos\AB-blackA\myIGME-201-DesignAndAlgrebriacSolutions\Final\Final - Search Form\obj\Debug\Final - Search Form.csproj.GenerateResource.cache
+C:\Users\black\source\repos\AB-blackA\myIGME-201-DesignAndAlgrebriacSolutions\Final\Final - Search Form\obj\Debug\Final - Search Form.csproj.CoreCompileInputs.cache
+C:\Users\black\source\repos\AB-blackA\myIGME-201-DesignAndAlgrebriacSolutions\Final\Final - Search Form\obj\Debug\Final - Search Form.exe
+C:\Users\black\source\repos\AB-blackA\myIGME-201-DesignAndAlgrebriacSolutions\Final\Final - Search Form\obj\Debug\Final - Search Form.pdb
