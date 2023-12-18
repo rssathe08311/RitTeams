@@ -150,7 +150,7 @@ namespace Project
         {
             Form4 form4 = new Form4();
             this.Hide();
-            form4.ShowDialog();
+            form4.Show();
 
 
 
