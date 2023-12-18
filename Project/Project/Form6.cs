@@ -13,6 +13,8 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ChatLib;
+using ProfileLib;
 
 namespace Project
 {
@@ -127,11 +129,11 @@ namespace Project
         private void button1__Click(object sender, EventArgs e)
         {
             // Set properties 
-            targetUser = "BennyJones";
+            targetUser = "Keyboard Kat";
             targetIP = "127.0.0.1";
 
             //show text
-            this.firstUser.Text = "BennyJones";
+            this.firstUser.Text = "Keyboard Kat";
             this.firstText.Text = "Hey buddy";
             this.firstUser.ForeColor = Color.Orange;
             this.secondUser.Visible = true;
@@ -166,11 +168,11 @@ namespace Project
         private void button2__Click(object sender, EventArgs e)
         {
             // Set properties 
-            targetUser = "AnotherPerson";
+            targetUser = "The Legend 27";
             targetIP = "161.0.0.1";
 
             //show text
-            this.firstUser.Text = "AnotherPerson";
+            this.firstUser.Text = "The Legend 27";
             this.firstUser.ForeColor = Color.Coral;
             this.firstText.Text = "Who are you?";
             this.secondUser.Visible = false;
@@ -204,11 +206,11 @@ namespace Project
         private void button3__Click(object sender, EventArgs e)
         {
             // Set properties 
-            targetUser = "Friend201";
+            targetUser = "ChairBear";
             targetIP = "193.0.0.1";
 
             //show text
-            this.firstUser.Text = "Friend201";
+            this.firstUser.Text = "ChairBear";
             this.firstUser.ForeColor = Color.Orange;
             this.firstText.Text = ":)";
             this.secondUser.Visible = false;

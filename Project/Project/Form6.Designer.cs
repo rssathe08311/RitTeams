@@ -230,9 +230,9 @@
             this.thirdUser.ForeColor = System.Drawing.Color.Orange;
             this.thirdUser.Location = new System.Drawing.Point(240, 108);
             this.thirdUser.Name = "thirdUser";
-            this.thirdUser.Size = new System.Drawing.Size(93, 16);
+            this.thirdUser.Size = new System.Drawing.Size(104, 16);
             this.thirdUser.TabIndex = 28;
-            this.thirdUser.Text = "BennyJones";
+            this.thirdUser.Text = "Keyboard Kat";
             // 
             // firstUser
             // 
@@ -241,9 +241,9 @@
             this.firstUser.ForeColor = System.Drawing.Color.Orange;
             this.firstUser.Location = new System.Drawing.Point(239, 24);
             this.firstUser.Name = "firstUser";
-            this.firstUser.Size = new System.Drawing.Size(93, 16);
+            this.firstUser.Size = new System.Drawing.Size(104, 16);
             this.firstUser.TabIndex = 27;
-            this.firstUser.Text = "BennyJones";
+            this.firstUser.Text = "Keyboard Kat";
             // 
             // sendButton
             // 
@@ -363,7 +363,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(175, 45);
             this.button3.TabIndex = 5;
-            this.button3.Text = "Friend201";
+            this.button3.Text = "ChairBear";
             this.button3.UseVisualStyleBackColor = false;
             // 
             // button2
@@ -374,7 +374,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(175, 45);
             this.button2.TabIndex = 4;
-            this.button2.Text = "AnotherPerson";
+            this.button2.Text = "The Legend 27";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // button1
@@ -385,7 +385,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(175, 45);
             this.button1.TabIndex = 3;
-            this.button1.Text = "BennyJones";
+            this.button1.Text = "Keyboard Kat";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // label1
