@@ -51,7 +51,7 @@ namespace Final___Search_Form
             this.searchGameTextBox.Text = DefaultGameSearchText;
 
             HideTeamResultsGroupBox();
-
+            requesterGroupBox.Visible = false;
 
         }
 
@@ -67,15 +67,42 @@ namespace Final___Search_Form
 
             this.teamResultsGroupBox.Visible = true;
             this.teamResultsGroupBox.Text = game.Name;
+
+
+
         }
+
 
         private void TextBox__Enter(object sender, EventArgs e)
         {
             TextBox tb = (TextBox)sender;
-            
-            if(tb.Text == DefaultTeamSearchText || tb.Text == DefaultGameSearchText)
+
+            if (tb.Text == DefaultTeamSearchText || tb.Text == DefaultGameSearchText)
             {
                 tb.Text = "";
+            }
+
+            if (tb == teamSearchTextBox)
+            {
+
+                teamLayoutPanel.Controls.Clear();
+                teamLayoutPanel.RowStyles.Clear();
+
+                RichTextBox teamName = new RichTextBox();
+                RichTextBox teamPlatform = new RichTextBox();
+                Button inviteButton = new Button();
+
+                teamName.Text = "Based Tigers";
+                teamPlatform.Text = "PC";
+                inviteButton.Text = "Request Join";
+
+                teamName.Dock = DockStyle.Fill;
+                teamPlatform.Dock = DockStyle.Fill;
+                inviteButton.Dock = DockStyle.Fill;
+
+                teamLayoutPanel.Controls.Add(teamName);
+                teamLayoutPanel.Controls.Add(teamPlatform);
+                teamLayoutPanel.Controls.Add(inviteButton);
             }
         }
 
@@ -144,16 +171,19 @@ namespace Final___Search_Form
             if (rtb.Tag.GetType() == typeof(GameNotFound))
             {
                 HideTeamResultsGroupBox();
+                requesterGroupBox.Visible = true;
             }
             else
             {
                 ShowTeamResultsGroupBox((Game)rtb.Tag);
+                requesterGroupBox.Visible = false;
             }
         }
 
         private void RequestButton__Click(object sender, EventArgs e)
         {
             Console.WriteLine(requestGameTextBox.Text);
+            requestGameTextBox.Text = "Request Sent!";
         }
 
         private void HomeBox__Click(object sender, EventArgs e)

@@ -129,7 +129,7 @@
             this.teamLayoutPanel.Name = "teamLayoutPanel";
             this.teamLayoutPanel.RowCount = 1;
             this.teamLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.teamLayoutPanel.Size = new System.Drawing.Size(208, 67);
+            this.teamLayoutPanel.Size = new System.Drawing.Size(239, 84);
             this.teamLayoutPanel.TabIndex = 1;
             // 
             // label1

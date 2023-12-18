@@ -23,8 +23,6 @@ Z:\IGMProfile\Desktop\201\Project\Project\bin\Debug\ProfileLib.pdb
 C:\Users\black\Documents\UnityProjects\SUPER Drop Down\RitTeams\Project\Project\bin\Debug\Project.exe.config
 C:\Users\black\Documents\UnityProjects\SUPER Drop Down\RitTeams\Project\Project\bin\Debug\Project.exe
 C:\Users\black\Documents\UnityProjects\SUPER Drop Down\RitTeams\Project\Project\bin\Debug\Project.pdb
-C:\Users\black\Documents\UnityProjects\SUPER Drop Down\RitTeams\Project\Project\bin\Debug\ChatLib.pdb
-C:\Users\black\Documents\UnityProjects\SUPER Drop Down\RitTeams\Project\Project\bin\Debug\ProfileLib.pdb
 C:\Users\black\Documents\UnityProjects\SUPER Drop Down\RitTeams\Project\Project\obj\Debug\Project.csproj.AssemblyReference.cache
 C:\Users\black\Documents\UnityProjects\SUPER Drop Down\RitTeams\Project\Project\obj\Debug\Project.Home.resources
 C:\Users\black\Documents\UnityProjects\SUPER Drop Down\RitTeams\Project\Project\obj\Debug\Project.Form2.resources
