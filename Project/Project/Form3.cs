@@ -125,7 +125,7 @@ namespace Project
             //back button
             this.homeBox.Click += new EventHandler(HomeBox__Click);
 
-            TextSize = int.Parse(this.textComboBox.SelectedItem.ToString());
+            //TextSize = int.Parse(this.textComboBox.SelectedItem.ToString());
             ColorMode = this.displayComboBox.SelectedItem.ToString();
         }
 
